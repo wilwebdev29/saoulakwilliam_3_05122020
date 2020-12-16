@@ -1,0 +1,488 @@
+/** ../sass/base/font.scss **/
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/**** roboto 900,700,500,400,300 ****/
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/Roboto-Black-webfont.eot");
+  src: url("fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Black-webfont.woff2") format("woff2"), url("fonts/Roboto-Black-webfont.woff") format("woff"), url("fonts/Roboto-Black-webfont.ttf") format("truetype"), url("fonts/Roboto-Black-webfont.svg#robotoblack") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robo';
+  src: url("Roboto-Bold-webfont.eot");
+  src: url("Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold-webfont.woff2") format("woff2"), url("Roboto-Bold-webfont.woff") format("woff"), url("Roboto-Bold-webfont.ttf") format("truetype"), url("Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url("Roboto-Medium-webfont.eot");
+  src: url("Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Medium-webfont.woff2") format("woff2"), url("Roboto-Medium-webfont.woff") format("woff"), url("Roboto-Medium-webfont.ttf") format("truetype"), url("Roboto-Medium-webfont.svg#robotomedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/Roboto-Regular-webfont.eot");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/Roboto-Light-webfont.eot");
+  src: url("fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Light-webfont.woff2") format("woff2"), url("fonts/Roboto-Light-webfont.woff") format("woff"), url("fonts/Roboto-Light-webfont.ttf") format("truetype"), url("fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+*, *::after, *::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+a {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  line-height: 3.3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.logo {
+  font-family: 'Shrikhand';
+}
+
+.btn {
+  background: linear-gradient(-5deg, #9356dc 0%, #ff79da 75%, #ff79da 100%);
+  height: 5rem;
+  width: 23rem;
+  border-radius: 2.5rem;
+  padding: 1.6666666667rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #FFF;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.plat {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 7rem;
+  border-radius: 1.3rem;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  background-color: #FFF;
+}
+.plat__infos {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.2rem 2.3rem 0.9rem 1rem;
+}
+.plat__infos strong {
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.plat__infos span {
+  font-weight: 300;
+  line-height: 2rem;
+  white-space: nowrap;
+  width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plat__infos b {
+  width: auto;
+  font-weight: 700;
+}
+.plat__btn {
+  overflow: hidden;
+  width: 0rem;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  background-color: #FFF;
+  border-radius: 2.5rem;
+}
+.restaurant__infos {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2.5rem;
+  padding: 1.3rem;
+}
+.restaurant__infos strong {
+  flex: 1;
+  min-width: 70%;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.restaurant__infos span {
+  flex: 1;
+  min-width: 70%;
+  font-weight: 300;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurant__infos i {
+  width: 4rem;
+  text-align: center;
+}
+.restaurant__visuel {
+  height: 17rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.restaurant__visuel img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.restaurant__visuel button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  border-radius: .2rem;
+  border: none;
+  overflow: hidden;
+  background-color: #99E2D0;
+  color: #1b6150;
+}
+
+.step {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  line-height: 2.5rem;
+  padding: 2.5rem .1rem;
+  border-radius: 1.6rem;
+  background-color: #f6f6f6;
+}
+.step__num {
+  background-color: #9356DC;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  left: -1.2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #FFF;
+  border-radius: 2.4rem;
+  overflow: hidden;
+}
+.step__icon {
+  font-size: 2rem;
+  color: #7e7e7e;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.step__label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'roboto';
+  flex: 1;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+}
+.form label {
+  color: #353535;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+}
+.form input {
+  box-sizing: border-box;
+  width: 15rem;
+  height: 5rem;
+  padding: .1rem;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  border: none;
+  color: #353535;
+  background-color: transparent;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+.header__logo {
+  color: #000;
+  text-align: center;
+  padding-top: 2.2rem;
+  padding-bottom: 1.3rem;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.carte {
+  width: 100%;
+  padding: 4rem 0rem 6rem 0rem;
+}
+.carte__categorieTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1.3rem;
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+.carte__categorieTitle span {
+  width: 100%;
+}
+.carte__categorieTitle i {
+  width: 4rem;
+  height: .3rem;
+  background-color: #99E2D0;
+}
+.carte__plats {
+  margin-bottom: 4rem;
+}
+.carte__plats li {
+  margin-bottom: 1.4rem;
+}
+.carte__plats li:last-child {
+  margin-bottom: 0rem;
+}
+.carte__btn {
+  width: 100%;
+  text-align: center;
+}
+.carte__btn button {
+  background: linear-gradient(-5deg, #9356dc 0%, #ff79da 75%, #ff79da 100%);
+  height: 5rem;
+  width: 18rem;
+  border-radius: 2.5rem;
+  padding: 1.6666666667rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #FFF;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  font-size: 1.6rem;
+  border: none;
+  margin: auto;
+}
+
+.footer {
+  padding: 2.4rem;
+  color: #ffffff;
+  background-color: #353535;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer .logo {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.8rem;
+}
+.footer ul {
+  margin-top: 2.5rem;
+}
+.footer ul li {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.footer ul li i {
+  margin-right: 1rem;
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  text-align: center;
+}
+
+.sctpres {
+  padding: 4rem 3rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #f6f6f6;
+  color: #000;
+}
+.sctpres h2 {
+  padding: 0rem 2rem;
+}
+.sctpres p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 1.8rem 0rem;
+}
+.sctpres a.btn {
+  text-decoration: none;
+  margin: auto;
+}
+
+.sctfonct {
+  padding: 5rem 2rem;
+}
+.sctfonct h2 {
+  text-align: left;
+}
+.sctfonct__steps {
+  width: 100%;
+}
+.sctfonct__steps li {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  line-height: 2rem;
+  width: 100%;
+  height: 7.5rem;
+  border-radius: 2.5rem;
+  background-color: #f6f6f6;
+}
+.sctfonct__steps li span:first-child {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 2.4rem;
+  background-color: #9356DC;
+  line-height: 2.4rem;
+  position: relative;
+  text-align: center;
+  left: -1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #FFF;
+}
+.sctfonct__steps li span:nth-child(2) {
+  font-size: 2rem;
+  color: #7e7e7e;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.sctfonct__steps li span:nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'roboto';
+  flex: 1;
+}
+
+.home .header {
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.home .content {
+  padding: 5rem 1.5rem 5.5rem 2rem;
+  background-color: #f6f6f6;
+}
+.home .content .vignetteResto {
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+}
+
+.menu .header {
+  display: flex;
+  height: 6.3rem;
+  line-height: 6.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.menu .header__logo {
+  flex: 1;
+}
+.menu .header__backlink {
+  width: 6.3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.menu .subheader {
+  padding: 0rem;
+}
+.menu .subheader img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.menu .content {
+  border-radius: 4.5rem 4.5rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 2rem;
+  background-color: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+  top: -45px;
+}
+
+/*# sourceMappingURL=style.css.map */
